@@ -18,10 +18,12 @@ repository = "https://github.com/matter-labs/pairing"
 edition = "2018"
 
 [dependencies]
-rand = "0.4"
-byteorder = "1"
-ff = {package = "ff_ce", version = "0.8", features = ["derive"]}
-# ff = { path = '../ff', package = "ff_ce", features = ["derive"]}
+sgx_rand = { version = "1.0.9", git = "https://github.com/baidu/rust-sgx-sdk.git" }
+sgx_tstd = { version = "1.0.9", git = "https://github.com/baidu/rust-sgx-sdk.git" }
+
+byteorder = { git = "https://github.com/eduadiez/byteorder.git" }
+ff = { package="ff_ce", git = "https://github.com/eduadiez/ff_ce-sgx", features = ["derive"] }
 
 [features]
+expose-arith = []
 default = []

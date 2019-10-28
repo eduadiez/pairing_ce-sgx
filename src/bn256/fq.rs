@@ -1,6 +1,9 @@
 use super::fq2::Fq2;
 use ff::{Field, PrimeField, PrimeFieldRepr};
 
+use std::string::String;
+use std::vec::Vec;
+
 #[derive(PrimeField)]
 #[PrimeFieldModulus = "21888242871839275222246405745257275088696311157297823662689037894645226208583"]
 #[PrimeFieldGenerator = "2"]

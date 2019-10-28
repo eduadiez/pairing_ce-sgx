@@ -11,8 +11,14 @@
 // Force public structures to implement Debug
 #![deny(missing_debug_implementations)]
 
+#![cfg_attr(not(all(target_env = "sgx", feature = "std")), no_std)]
+#![cfg_attr(all(target_env = "sgx", feature = "std"), feature(rustc_private))]
+#[cfg(not(target_env = "sgx"))]
+#[macro_use]
+extern crate sgx_tstd as std;
+
 extern crate byteorder;
-extern crate rand;
+extern crate sgx_rand as rand;
 
 #[cfg(test)]
 pub mod tests;

@@ -228,6 +228,8 @@ macro_rules! curve_impl {
                 // Genelle, Prouff and Quisquater
                 // Section 3.2
 
+                use std::vec::Vec;
+
                 // First pass: compute [a, ab, abc, ...]
                 let mut prod = Vec::with_capacity(v.len());
                 let mut tmp = $basefield::one();
@@ -1386,6 +1388,8 @@ pub mod g2 {
             ret
         }
     }
+
+    use std::vec::Vec;
 
     #[derive(Clone, Debug)]
     pub struct G2Prepared {

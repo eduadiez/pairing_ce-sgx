@@ -1,6 +1,9 @@
 use super::fq2::Fq2;
 use ff::{Field, PrimeField, PrimeFieldRepr};
 
+use std::string::String;
+use std::vec::Vec;
+
 // B coefficient of BLS12-381 curve, 4.
 pub const B_COEFF: Fq = Fq(FqRepr([
     0xaa270000000cfff3,

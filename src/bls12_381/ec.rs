@@ -10,6 +10,8 @@ macro_rules! curve_impl {
         $compressed:ident,
         $pairing:ident
     ) => {
+        use std::vec::Vec;
+
         #[derive(Copy, Clone, PartialEq, Eq, Debug)]
         pub struct $affine {
             pub(crate) x: $basefield,
