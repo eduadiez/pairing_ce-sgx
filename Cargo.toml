@@ -22,7 +22,7 @@ sgx_rand = { version = "1.0.9", git = "https://github.com/baidu/rust-sgx-sdk.git
 sgx_tstd = { version = "1.0.9", git = "https://github.com/baidu/rust-sgx-sdk.git" }
 
 byteorder = { git = "https://github.com/eduadiez/byteorder.git", rev="f981220" }
-ff = { package="ff_ce", git = "https://github.com/eduadiez/ff_ce-sgx.git", rev="0401988", features = ["derive"] }
+ff = { package="ff_ce", git = "https://github.com/eduadiez/ff_ce-sgx.git", rev="09b1d53", features = ["derive"] }
 
 [features]
 expose-arith = []
