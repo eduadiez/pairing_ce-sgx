@@ -18,10 +18,10 @@ repository = "https://github.com/matter-labs/pairing"
 edition = "2018"
 
 [dependencies]
-sgx_rand = { version = "1.0.9" }
-sgx_tstd = { version = "1.0.9" }
+sgx_rand = { version = "1.1.0" }
+sgx_tstd = { version = "1.1.0" }
 byteorder = { package = "byteorder-sgx", version = "0.0.1" }
-ff = { package="ff_ce-sgx", git = "https://github.com/eduadiez/ff_ce-sgx.git", rev="250bd5e", features = ["derive"] }
+ff = { package="ff_ce-sgx", git = "https://github.com/eduadiez/ff_ce-sgx.git", rev="a888fab", features = ["derive"] }
 
 [features]
 expose-arith = []
