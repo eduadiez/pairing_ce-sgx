@@ -1,6 +1,5 @@
 use super::fq2::Fq2;
 use ff::{Field, PrimeField, PrimeFieldRepr};
-
 use std::string::String;
 use std::vec::Vec;
 

@@ -1,5 +1,4 @@
 use super::{CurveProjective, PrimeField, PrimeFieldRepr};
-
 use std::vec::Vec;
 
 /// Replaces the contents of `table` with a w-NAF window table for the given window size.
